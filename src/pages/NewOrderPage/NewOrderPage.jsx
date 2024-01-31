@@ -6,8 +6,9 @@ import { Link, useNavigate } from 'react-router-dom';
 // import Logo from '../../components/Logo/Logo';
 import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
-import OrderDetail from '../../components/OrderDetail/OrderDetail';
+// import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
+import CheckoutPage from '../CheckoutPage/CheckoutPage';
 
 export default function NewOrderPage({ user, setUser }) {
   const [menuItems, setMenuItems] = useState([]);
@@ -70,11 +71,11 @@ export default function NewOrderPage({ user, setUser }) {
         menuItems={menuItems.filter(item => item.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder}
       />
-      <OrderDetail
+      {/* <OrderDetail
         order={cart}
         handleChangeQty={handleChangeQty}
         handleCheckout={handleCheckout}
-      />
+      /> */}
     </main>
   );
 }

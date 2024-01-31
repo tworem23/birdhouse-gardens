@@ -1,0 +1,46 @@
+.LineItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Adding a border between line items */
+}
+
+.flex-ctr-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-ctr {
+  text-align: center;
+}
+
+.qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-xs {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #008080; /* Teal color, adjust as needed */
+  color: #ffffff; /* White color for text, adjust as needed */
+  border: none;
+  border-radius: 3px;
+}
+
+.btn-xs:hover {
+  background-color: #005454; /* Darker teal on hover, adjust as needed */
+}
+
+.ext-price {
+  text-align: right;
+}

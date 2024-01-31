@@ -1,0 +1,45 @@
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #008080; /* teal */
+    color: #fff; /* white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #1a1a1a; /* black */
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #1a1a1a; /* black */
+    color: #fff; /* white */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #808080; /* gray */
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #ff4500; /* orangered */
+    margin-top: 8px;
+  }
+  

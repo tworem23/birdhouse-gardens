@@ -1,0 +1,50 @@
+:root {
+  --primary-bg: #000000; /* Black background */
+  --secondary-bg: #1a1a1a; /* Darker gray background */
+  --accent: #ff4500; /* Orange accent color */
+  --text-light: #000000; /* Black text color */
+  --text-dark: #1a1a1a; /* Dark text color */
+}
+
+.NewOrderPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-bg);
+  color: var(--text-dark);
+}
+
+aside {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.CategoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.CategoryList li {
+  margin-right: 20px;
+}
+
+.MenuList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+ 
+}
+
+.MenuList li {
+  list-style: none;
+}
+
+.OrderDetail {
+  width: 100%;
+}
+

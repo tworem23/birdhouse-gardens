@@ -1,0 +1,48 @@
+:root {
+  --primary-bg: #f5f5f5; /* Light background */
+  --secondary-bg: #ffffff; /* White background */
+  --accent: #ff4500; /* Orange accent color */
+  --text-dark: #333333; /* Dark text color */
+}
+
+.OrderDetail {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--primary-bg);
+  color: var(--text-dark);
+}
+
+.OrderDetail header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.OrderDetail h2 {
+  margin: 0;
+}
+
+.OrderDetail table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.OrderDetail th, .OrderDetail td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary-bg);
+}
+
+.OrderDetail th {
+  background-color: var(--secondary-bg);
+}
+
+.OrderDetail .total {
+  font-weight: bold;
+  margin-top: 10px;
+}

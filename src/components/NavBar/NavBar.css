@@ -1,0 +1,34 @@
+:root {
+    --teal-bg: #008080; /* Teal background color */
+    --text-light: #ffffff; /* White text color */
+    --text-dark: #1a1a1a; /* Dark text color */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--teal-bg);
+    padding: 10px;
+  }
+  
+  nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+  }
+  
+  nav a:hover {
+    background-color: var(--text-dark);
+    color: var(--teal-bg);
+    border-radius: 3px;
+  }
+  
+  nav span {
+    margin-right: auto; /* Push the Welcome text to the right */
+    color: var(--text-light);
+  }
+  
+  nav a:last-child {
+    margin-left: 10px;
+  }
