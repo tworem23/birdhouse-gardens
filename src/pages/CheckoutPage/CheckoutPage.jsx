@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import * as ordersAPI from '../../utilities/orders-api'
 import * as itemsAPI from '../../utilities/items-api'
-
+import '../CheckoutPage/CheckoutPage.css'
 
 
 export default function CheckoutPage(order, handleChangeQty, handleCheckout) {

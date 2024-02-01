@@ -1,48 +1,38 @@
-:root {
-  --primary-bg: #000000; /* Black background */
-  --secondary-bg: #1a1a1a; /* Darker gray background */
-  --accent: #ff4500; /* Orange accent color */
-  --text-light: #000000; /* Black text color */
-  --text-dark: #1a1a1a; /* Dark text color */
-}
 .MenuListItem {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3vmin;
-    padding: 2vmin;
-    color: var(--text-light);
-    background-color: var(--white);
-    border: .1vmin solid var(--tan-3);
-    border-radius: 1vmin;
-    font-size: 4vmin;
-  }
-  
-  .MenuListItem .emoji {
-    height: 8vw;
-    width: 8vw;
-    font-size: 4vw;
-    background-color: var(--tan-1);
-    border: .1vmin solid var(--tan-3);
-    border-radius: 1vmin;
-  }
-  
-  .MenuListItem .buy {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .MenuListItem .buy span {
-    font-size: 1.7vw;
-    text-align: center;
-    color: var(--text-light);
-  }
-  
-  .MenuListItem .name {
-    font-size: 2vw;
-    text-align: center;
-    color: var(--text-light);
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Increased padding for a slightly larger item */
+  border-bottom: 2px solid #ddd; /* Thicker border between menu items */
+}
+
+.emoji {
+  font-size: 24px; /* Slightly larger emoji */
+  margin-right: 15px; /* Increased margin for spacing */
+}
+
+.name {
+  flex-grow: 1;
+  margin-right: 15px; /* Increased margin for spacing */
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+}
+
+.btn-sm {
+  font-size: 16px; /* Slightly larger button text */
+  padding: 8px 15px; /* Increased padding for a larger button */
+  cursor: pointer;
+  background-color: #008080; /* Teal color, adjust as needed */
+  color: #ffffff; /* White color for text, adjust as needed */
+  border: none;
+  border-radius: 5px; /* Rounded corners for a softer look */
+  outline: none;
+}
+
+.btn-sm:hover {
+  background-color: #005454; /* Darker teal on hover, adjust as needed */
+}
   

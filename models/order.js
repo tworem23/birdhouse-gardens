@@ -78,6 +78,7 @@ orderSchema.methods.setItemQty = function(itemId, newQty) {
   const cart = this;
   // Find the line item in the cart for the menu item
   const lineItem = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
+  console.log(lineItem)
   if (lineItem && newQty <= 0) {
     // Calling deleteOne, removes the lineItem subdoc from the cart.lineItems array
     lineItem.deleteOne();
