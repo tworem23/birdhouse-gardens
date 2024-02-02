@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { getUser } from '../../utilities/users-service';
+import About from '../About/About'
 import AuthPage from '../AuthPage/AuthPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import CheckoutPage from '../CheckoutPage/CheckoutPage';
@@ -15,10 +16,9 @@ export default function App() {
       <>
         <NavBar user={user} />
         <Routes>
-          {/* client-side route that renders the component instance if the path matches the url in the address bar */}
+          <Route path="/about" element={<About user={user} setUser={setUser} />} />
           <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
           <Route path="/orders" element={<CheckoutPage user={user} setUser={setUser} />} />
-          {/* redirect to /orders/new if path in address bar hasn't matched a <Route> above */}
           <Route path="/*" element={<Navigate to="/orders/new" />} />
         </Routes>
       </>
