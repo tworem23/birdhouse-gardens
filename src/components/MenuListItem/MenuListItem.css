@@ -1,19 +1,28 @@
+/* MenuListItem.css */
+
 .MenuListItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px; /* Increased padding for a slightly larger item */
-  border-bottom: 2px solid #ddd; /* Thicker border between menu items */
+  padding: 15px; /* Adjust padding as needed */
+  border-bottom: 2px solid #ddd; /* Border between menu items */
 }
 
-.emoji {
-  font-size: 24px; /* Slightly larger emoji */
-  margin-right: 15px; /* Increased margin for spacing */
+.image {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  margin-right: 15px; /* Adjust margin as needed */
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+}
+
+.image img {
+  width: 100%; /* Make the image take up 100% of the container width */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 .name {
   flex-grow: 1;
-  margin-right: 15px; /* Increased margin for spacing */
+  margin-right: 15px; /* Adjust margin as needed */
 }
 
 .buy {
@@ -22,13 +31,13 @@
 }
 
 .btn-sm {
-  font-size: 16px; /* Slightly larger button text */
-  padding: 8px 15px; /* Increased padding for a larger button */
+  font-size: 16px;
+  padding: 8px 15px;
   cursor: pointer;
   background-color: #008080; /* Teal color, adjust as needed */
   color: #ffffff; /* White color for text, adjust as needed */
   border: none;
-  border-radius: 5px; /* Rounded corners for a softer look */
+  border-radius: 5px;
   outline: none;
 }
 

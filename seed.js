@@ -18,25 +18,25 @@ const Item = require('./models/item');
     {name: 'Smoking Woods', sortOrder: 70},
   ]);
 
-  await Item.deleteMany({});
+  await Item.deleteMany({}); 
   const items = await Item.create([
-    {name: 'Whole Goose', category: categories[0], price: 5.95},
-    {name: 'Whole Chicken', category: categories[0], price: 6.95},
-    {name: 'Whole Duck', category: categories[0], price: 3.95},
-    {name: 'Fresh Plums', category: categories[1], price: 14.95},
-    {name: 'Fresh Apples', category: categories[1], price: 13.95},
-    {name: 'Fresh Peaches', category: categories[1], price: 25.95},
-    {name: 'Shitake', category: categories[2], price: 1.95},
-    {name: 'Oysters', category: categories[2], price: 4.95},
-    {name: 'Chicken Eggs', category: categories[3], price: 3.95},
-    {name: 'Quail Eggs', category: categories[3], price: 7.95},
-    {name: 'Thyme', category: categories[4], price: 1.95},
-    {name: 'Rosemary', category: categories[4], price: 2.95},
-    {name: 'Sage', category: categories[4], price: 3.95},
-    {name: 'Herb Pot', category: categories[5], price: 1.95},
-    {name: 'Flower Pot', category: categories[5], price: 0.95},
-    {name: 'Peach Wood', category: categories[6], price: 0.95},
-    {name: 'Apple Wood', category: categories[6], price: 0.95},
+    {name: 'Goose per pound', category: categories[0], image: 'https://i.imgur.com/3zbOroH.jpeg', price: 5.99},
+    {name: 'Chicken per pound', category: categories[0], image: 'https://i.imgur.com/XBqe1Wz.jpeg', price: 3.99},
+    {name: 'Duck per pound', category: categories[0], image: 'https://i.imgur.com/9P5ZOyP.jpeg', price: 6.99},
+    {name: 'Bushel of Plums', category: categories[1], image: 'https://i.imgur.com/DmKdHrI.jpeg', price: 23.99},
+    {name: 'Bushel of Apples', category: categories[1], image: 'https://i.imgur.com/12yadAJ.jpeg', price: 16.99},
+    {name: 'Bushel of Peaches', category: categories[1], image: 'https://i.imgur.com/S8jCrUe.jpeg', price: 25.99},
+    {name: 'Shitake per Pound', category: categories[2], image: 'https://i.imgur.com/Cg5pIuh.jpeg', price: 12.99},
+    {name: 'Oysters per Pound', category: categories[2], image: 'https://i.imgur.com/Ozr2sr5.jpeg', price: 14.99},
+    {name: 'One Dozen Chicken Eggs', category: categories[3], image: 'https://i.imgur.com/7stKYRZ.jpeg', price: 3.99},
+    {name: 'Two Dozen Quail Eggs', category: categories[3], image: 'https://i.imgur.com/R2xB8Uz.jpeg', price: 12.99},
+    {name: 'Thyme per Ounce', category: categories[4], image: 'https://i.imgur.com/DnnvmIv.jpeg', price: 2.99},
+    {name: 'Rosemary per Ounce', category: categories[4], image: 'https://i.imgur.com/u6iNAvE.jpeg', price: 2.99},
+    {name: 'Sage per Ounce', category: categories[4], image: 'https://i.imgur.com/EB6mh5l.jpeg', price: 1.99},
+    {name: 'Herb Pot', category: categories[5], image: 'https://i.imgur.com/AVUzn3e.jpeg', price: 10.99},
+    {name: 'Flower Pot', category: categories[5], image: 'https://i.imgur.com/QjuKFBp.jpeg', price: 14.99},
+    {name: 'Bundle of Peach Wood', category: categories[6], image: 'https://i.imgur.com/z8ys4Bz.jpeg', price: 9.99},
+    {name: 'Bundle of Apple Wood', category: categories[6], image: 'https://i.imgur.com/joFITS4.jpeg', price: 9.99},
   ]);
 
   console.log(items)
