@@ -18,9 +18,9 @@ List and briefly describe the main components used in your app.
 ## Screenshots
 
 <!-- Add screenshots or other images here -->
-![Screenshot 1](link_to_screenshot_1.png)
-![Screenshot 2](link_to_screenshot_2.png)
-![Screenshot 3](link_to_screenshot_2.png)
+![ABout Page](https://i.imgur.com/R0LJRda.png)
+![New Order](https://i.imgur.com/Odl6Nov.png)
+![Checkout Page](https://i.imgur.com/yftsgDC.png)
 <!-- Add more screenshots as needed -->
 
 ## Technologies Used
