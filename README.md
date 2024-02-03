@@ -13,7 +13,7 @@ List and briefly describe the main components used in your app.
 - `App`: Main component rendering routes.
 - `AuthPage`: Authentication page.
 - `NewOrderPage`: Page for creating new orders.
-- `OrderHistoryPage`: Page displaying order history.
+- `Checkout Page`: Page for displaying a checkout cart.
 
 ## Screenshots
 
@@ -32,9 +32,3 @@ List the key technologies and libraries used in your React app.
 - Node.js (if applicable)
 - MongoDB (if applicable)
 - Express
-
-## Contributing
-
-Provide guidelines for contributing to your React project.
-
-## License
